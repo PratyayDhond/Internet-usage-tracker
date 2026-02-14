@@ -19,7 +19,7 @@ A Firefox browser extension that tracks your internet usage and syncs data to a 
 1. Create a free account at [supabase.com](https://supabase.com)
 2. Create a new project
 3. Go to **SQL Editor** and run the contents of `supabase-setup.sql`
-4. Go to **Settings > API** and copy:
+4. Go to **Settings/Connect > API** and copy:
    - Project URL (e.g., `https://xxxxx.supabase.co`)
    - `anon` public key
 
@@ -33,6 +33,8 @@ A Firefox browser extension that tracks your internet usage and syncs data to a 
 4. Navigate to the extension folder and select `manifest.json`
 
 #### Option B: Permanent Installation (signed)
+
+#todo add firefox addon details here
 
 1. Package the extension: `zip -r internet-tracker.xpi *`
 2. Submit to [Firefox Add-ons](https://addons.mozilla.org) for signing
@@ -155,7 +157,3 @@ WHERE user_id = 'your@email.com'
   AND date >= CURRENT_DATE - INTERVAL '7 days'
 GROUP BY date ORDER BY date;
 ```
-
-## License
-
-MIT License - feel free to modify and use as you wish.
